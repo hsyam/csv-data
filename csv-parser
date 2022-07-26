@@ -1,0 +1,10 @@
+#! /usr/bin/env node
+const { program } = require('commander');
+const exportCsv = require('./commands/exportCsv');
+
+program
+    .command('export <filePath>')
+    .description('Parse and export CVS files')
+    .action(exportCsv)
+
+program.parse()
