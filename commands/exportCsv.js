@@ -12,6 +12,8 @@ exportCsv = async (filePath) => {
     let popularBrands = getPopularBrands(brandsOrdersCount)
 
     exportCSVFiles(path.basename(filePath),avgOrders,popularBrands)
+    console.log('Export Completed Successfully')
+
 }
 
 /**
